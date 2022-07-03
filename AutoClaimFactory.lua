@@ -4,6 +4,8 @@ local StartFactoryCraft = ReplicatedStorage.Events.StartFactoryCraft
 
 local ToggleOn = false
 
+print("Opened")
+
 game:GetService("UserInputService").InputBegan:Connect(function(inputKey)
     if inputKey.KeyCode == _G.ToggleKey then
         ToggleOn = not ToggleOn
